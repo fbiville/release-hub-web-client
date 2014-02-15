@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Release hub: the one place to rule them all!</title>
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/style.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">RELEASE HUB</a>
+					<p class="navbar-text">Welcome John Doe</p>
+				</div>
+
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Settings</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a id="signout" href="#">Log out</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+			
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-9 col-md-8">
+					<h1>REST APIs <small>euler</small></h1>
+				</div>
+				<div class="col-xs-9 col-md-4">
+					<form role="form">
+						<div class="form-group">
+							<label class="sr-only" for="product">Products</label>
+							<select id="product" class="form-control">
+								<optgroup label="Products">
+									<option>REST APIs (euler)</option>
+									<option>SOAP APIs (pythagore)</option>
+									<option>Installer (thales)</option>
+									<option>Corporate website (galois)</option>
+									<option>Android app (al-kashi)</option>
+								</optgroup>
+							</select>
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="versions">Versions</label>
+							<select id="versions" class="form-control">
+								<optgroup label="Versions">
+									<option>1.0.0</option>
+									<option>1.0.1</option>
+									<option>1.1.0</option>
+									<option>1.2.0</option>
+									<option>2.0.0-beta</option>
+								</optgroup>
+							</select>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-8">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#">Internal deps</a></li>
+						<li><a href="#">External deps</a></h2></li>
+					</ul>
+					<div id="graph" class="graph internal-graph">
+
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-4">
+					<div class="panel panel-default stats">
+						<div class="panel-heading">Issue summary (last week)</div>
+						<div class="panel-body">
+							<img class="img-rounded" alt="Issue summary" src="images/histo.png" />
+						</div>
+						<div class="panel-heading actions" id="info-header">Latest actions</div>
+						<div class="panel-body" id="info-container">
+							<ul class="list-group">
+								<li class="list-group-item"><span class="glyphicon glyphicon-user"></span> Stuart just closed <a href="#">EULER-XYZ</a>.</li>
+								<li class="list-group-item"><span class="glyphicon glyphicon-user"></span> Olivier reopened <a href="#">COMMONAPI-AAA</a>.</li>
+								<li class="list-group-item"><span class="glyphicon glyphicon-user"></span> Jean-Baptiste won't fix <a href="#">COMMON-123</a>.</li>
+								<li class="list-group-item"><span class="glyphicon glyphicon-user"></span> Vincent commented on <a href="#">EULER-ABC</a>.</li>
+								<li class="list-group-item"><span class="glyphicon glyphicon-user"></span> Hugo fixed <a href="#">COMMONAPI-845</a>.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-8 col-md-8">
+						<p id="footer-title" class="pull-left">
+							<button type="button" class="btn btn-default btn-lg">
+								<span class="glyphicon glyphicon-cloud-upload"></span> RELEASE HUB <small>(α version)</small>
+							</button>
+						</p>
+					</div>
+					<div class="col-xs-2 col-md-2">
+						<ul class="list-unstyled">
+							<li><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;&nbsp;<a href="#">Team</a></li>
+							<li><span class="glyphicon glyphicon-retweet"></span>&nbsp;&nbsp;<a href="#">@release_hub</a></li>
+							<li><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;<a href="#">On Google+</a></li>
+							<li><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;<a href="#">Support</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-2 col-md-2">
+						<ul class="list-unstyled">
+							<li><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;<a href="#">Pricing</a></li>
+							<li><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;<a href="#">Documentation</a></li>
+							<li><span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;<a href="#">Legal</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="scripts/jquery-2.1.0.min.js"></script>
+		<script src="scripts/vis.js"></script>
+		<script src="scripts/release-hub.js"></script>
+	</body>
+</html>
